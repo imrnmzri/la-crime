@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Los Angeles Crime Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9d20f638-3782-437c-ae15-6151edd3564d"
+  }
+}

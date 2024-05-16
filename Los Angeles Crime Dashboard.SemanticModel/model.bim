@@ -1,0 +1,1026 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"LA Crime Data\",\"Last Refreshed\",\"Measures Table\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.128.1380.0 (24.04)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "la_crime_data.status_desc": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "LA Crime Data",
+                    "ConceptualProperty": "status_desc"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Status": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "measures_table.location_with_the_most_crime_recorded": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Measures Table",
+                    "ConceptualProperty": "Location with The Most Crime Recorded"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Location Name with The Most Crime Recorded": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "55e62388-17d5-49ae-b3e9-bb97cd669ef4",
+        "fromColumn": "date_occ",
+        "fromTable": "LA Crime Data",
+        "toColumn": "Date",
+        "toTable": "Calendar Table"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "LA Crime Data",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "UCR Reporting",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b909bca-2042-429f-91b2-0019feaf1091",
+            "sourceColumn": "UCR Reporting",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Days to Report",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ead7500c-6bf5-47a1-9718-08ef2882f131",
+            "sourceColumn": "Days to Report",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Victim Descent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c35e704f-c91d-4c74-9831-1263876e4a4a",
+            "sourceColumn": "Victim Descent",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Location Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "faea5aa7-36b2-469b-bba4-f91ae9805cbc",
+            "sourceColumn": "Location Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Record Number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ec21955b-b6f4-4621-b9ca-ed3c03857978",
+            "sourceColumn": "Record Number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "date_rptd",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "7cca86ef-2e4c-4194-8fbd-a80dbad28466",
+            "sourceColumn": "date_rptd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "date_occ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "3d8147d5-b2ff-42bc-a88a-4dd93c709c5a",
+            "sourceColumn": "date_occ",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "time_occ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dee86302-7b2f-4140-b8c1-97c167d3320a",
+            "sourceColumn": "time_occ",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c1ef63d5-fe94-4c4a-94d4-9688973c79fc",
+            "sourceColumn": "area",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Area Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "370c2ebe-4e3a-4316-849b-9a9188b561ab",
+            "sourceColumn": "Area Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rpt_dist_no",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b5ddc89b-afde-4141-bc20-4c1ac8d037c8",
+            "sourceColumn": "rpt_dist_no",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "part_1_2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0",
+            "lineageTag": "b1cb0898-d624-41f1-8f18-f27424abda1f",
+            "sourceColumn": "part_1_2",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "crm_cd",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d069ed14-1f2d-4a15-922c-16d6616f2e50",
+            "sourceColumn": "crm_cd",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "crm_cd_desc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ff58ca82-4b9d-4650-8092-a9a5697b3dda",
+            "sourceColumn": "crm_cd_desc",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mocodes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4d3eefb7-ed2b-483f-b314-7407acedfa55",
+            "sourceColumn": "mocodes",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Victim Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f0c62e57-b8ab-415b-81cf-6aeaccd42b30",
+            "sourceColumn": "Victim Age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "vict_sex",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "020f8db4-5afe-48bb-bf3e-3900029e3710",
+            "sourceColumn": "vict_sex",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "premis_cd",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "0",
+            "lineageTag": "27d10469-a57a-40da-863f-d6ae0cfd2788",
+            "sourceColumn": "premis_cd",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "premis_desc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "87b077f9-69a6-4ac1-a4d8-f739a95a66b1",
+            "sourceColumn": "premis_desc",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "weapon_used_cd",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fdf1baf4-71c8-426b-8cde-2380000ef8c4",
+            "sourceColumn": "weapon_used_cd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Weapon Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "289b2d97-526b-4227-be6d-5110152eec5e",
+            "sourceColumn": "Weapon Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e660d76f-356b-4d8f-8799-58a802cc503e",
+            "sourceColumn": "status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_desc",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8c126efa-968e-46e1-ae80-f390378d7ee3",
+            "sourceColumn": "status_desc",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "crm_cd_1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f4edb08b-a7a0-4994-839c-65b1719c1591",
+            "sourceColumn": "crm_cd_1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "crm_cd_2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0dfc8470-4dfd-40bc-8389-b546f263873f",
+            "sourceColumn": "crm_cd_2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "crm_cd_3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fd5a0d85-c6e8-4b95-957d-b0e6e40526b2",
+            "sourceColumn": "crm_cd_3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "crm_cd_4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8829dc45-8f03-4bf6-a88c-8f743fea6206",
+            "sourceColumn": "crm_cd_4",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cross_street",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f3535ce1-cdae-48e6-bd38-a78845245943",
+            "sourceColumn": "cross_street",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "lat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "61034e1c-3d5f-4a9f-a2dd-0ff6d0e550e6",
+            "sourceColumn": "lat",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "lon",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f417165b-b790-4a36-8b8c-f3c27279268f",
+            "sourceColumn": "lon",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "__id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3f7ad7cc-41d4-45f6-896a-00d467708faa",
+            "sourceColumn": "__id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StandardTime",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "",
+              "VAR ConvertedTime = ",
+              "TIME(",
+              "    VALUE(LEFT('LA Crime Data'[time_occ], 2)),",
+              "    VALUE(RIGHT('LA Crime Data'[time_occ], 2)),",
+              "    0",
+              ")",
+              "",
+              "RETURN ",
+              "FORMAT(ConvertedTime, \"hh:mm AM/PM\")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "fcb62853-2726-4a94-ae72-d80710600370",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "bfe11696-b6dc-48e9-935f-10ca231db947",
+        "partitions": [
+          {
+            "name": "LA Crime Data",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = OData.Feed(\"https://data.lacity.org/api/odata/v4/2nrs-mtv8\", null, [Implementation=\"2.0\"]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"date_rptd\", type datetime}, {\"date_occ\", type datetime}, {\"crm_cd\", Int64.Type}, {\"vict_age\", Int64.Type}}),",
+                "    #\"Remove zero lat\" = Table.SelectRows(#\"Changed Type\", each [lat] <> 0),",
+                "    #\"Remove zero lon\" = Table.SelectRows(#\"Remove zero lat\", each [lon] <> 0),",
+                "    #\"Add UCR type 1\" = Table.AddColumn(#\"Remove zero lon\", \"UCR Reporting\", each if List.ContainsAny({[crm_cd]}, {110, 113}) then \"HOMICIDE\"",
+                "else if List.ContainsAny({[crm_cd]}, {121, 122, 815, 820, 821}) then \"RAPE\"",
+                "else if List.ContainsAny({[crm_cd]}, {210, 220}) then \"ROBBERY\"",
+                "else if List.ContainsAny({[crm_cd]}, {230, 231, 235, 236, 250,251, 761, 926}) then \"AGG. ASSAULTS\"",
+                "else if List.ContainsAny({[crm_cd]}, {435, 436, 437, 622, 623, 624, 625, 626, 627, 647, 763, 928, 930}) then \"SIMPLE ASSAULT\"",
+                "else if List.ContainsAny({[crm_cd]}, {310, 320}) then \"BURGLARY\"",
+                "else if List.ContainsAny({[crm_cd]}, {510, 520, 433}) then \"MVT (GTA)\"",
+                "else if List.ContainsAny({[crm_cd]}, {330, 331, 410, 420, 421}) then \"BTFV\"",
+                "else if List.ContainsAny({[crm_cd]}, {350, 351, 352, 353, 450, 451, 452, 453}) then \"PERSONAL THEFT\"",
+                "else if List.ContainsAny({[crm_cd]}, {341, 343, 345, 440, 441, 442, 443, 444, 445, 470, 471, 472, 473, 474, 475, 480, 485, 487, 491}) then \"OTHER THEFT\"",
+                "else \"PART II OFFENSE\"),",
+                "    #\"Calculate days to report\" = Table.AddColumn(#\"Add UCR type 1\", \"Days to Report\", each [date_rptd] - [date_occ]),",
+                "    #\"Convert to days\" = Table.TransformColumns(#\"Calculate days to report\",{{\"Days to Report\", Duration.Days, Int64.Type}}),",
+                "    #\"Expand descendant\" = Table.AddColumn(#\"Convert to days\", \"Victim Descent\", each if [vict_descent] = \"A\" then \"Other Asian\" else if [vict_descent] = \"B\" then \"Black\" else if [vict_descent] = \"C\" then \"Chinese\" else if [vict_descent] = \"D\" then \"Cambodian\" else if [vict_descent] = \"F\" then \"Filipino\" else if [vict_descent] = \"G\" then \"Guamaian\" else if [vict_descent] = \"H\" then \"Hispanic/Latin/Mexican\" else if [vict_descent] = \"I\" then \"American Indian/Alaskan Native\" else if [vict_descent] = \"J\" then \"Japanese\" else if [vict_descent] = \"K\" then \"Korean\" else if [vict_descent] = \"L\" then \"Laotian\" else if [vict_descent] = \"O\" then \"Other\" else if [vict_descent] = \"P\" then \"Pacific Islander\" else if [vict_descent] = \"S\" then \"Samoan\" else if [vict_descent] = \"U\" then \"Hawaiian\" else if [vict_descent] = \"V\" then \"Vietnamese\" else if [vict_descent] = \"W\" then \"White\" else if [vict_descent] = \"X\" then \"Unknown\" else if [vict_descent] = \"Z\" then \"Asian Indian\" else \"Unknown\"),",
+                "    #\"Clean location name\" = Table.AddColumn(#\"Expand descendant\", \"Location Name\", each Text.Combine(List.Select(Text.SplitAny([location], \" #(lf)#(cr)\"), each _<>\"\"), \" \")),",
+                "    #\"Removed original columns\" = Table.RemoveColumns(#\"Clean location name\",{\"vict_descent\", \"location\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed original columns\",{{\"area_name\", \"Area Name\"}, {\"dr_no\", \"Record Number\"}, {\"vict_age\", \"Victim Age\"}, {\"weapon_desc\", \"Weapon Type\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendar Table",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "4aa91d0b5ee44044af6dfc50a389f1da"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "87d60b3a-708f-4710-a124-205cc54c666e",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "88207f95-62d7-4263-96a2-95ef8dbc6ee4",
+        "partitions": [
+          {
+            "name": "Calendar Table",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "",
+                "",
+                "CALENDAR(DATE(2020, 01, 01), TODAY())"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Last Refreshed",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Last Refreshed Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "7e9e0ff1-03e7-4a65-994f-f19a67c12699",
+            "sourceColumn": "Last Refreshed Date",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "5cfa3b6b-df28-4ba8-8937-8b11950417d1",
+        "partitions": [
+          {
+            "name": "Last Refreshed",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DateTimeZone.LocalNow(),",
+                "    #\"Converted to Table\" = #table(1, {{Source}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Converted to Table\", {{\"Column1\", \"Last Refreshed Date\"}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\", {{\"Last Refreshed Date\", type datetime}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measures Table",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "4620cccc-54ce-4cbe-bc22-1f7384e36e3b",
+        "measures": [
+          {
+            "name": "Area Name",
+            "expression": [
+              "",
+              "",
+              "IF(",
+              "    ISBLANK(SELECTEDVALUE('LA Crime Data'[Area Name])),",
+              "    \"Los Angeles\",",
+              "    SELECTEDVALUE('LA Crime Data'[Area Name])",
+              ")"
+            ],
+            "lineageTag": "91c15ed6-291d-450b-b37a-7d4c74bd744a"
+          },
+          {
+            "name": "Crime Type with The Most Crime Recorded",
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[UCR Reporting],",
+              "    \"Total Crime Recorded\", DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              ")",
+              "",
+              "VAR max_value =",
+              "MAXX(",
+              "    summary_table,",
+              "    [Total Crime Recorded]",
+              ")",
+              "",
+              "RETURN",
+              "CALCULATE(",
+              "    SELECTEDVALUE('LA Crime Data'[UCR Reporting]),",
+              "    FILTER(summary_table, [Total Crime Recorded] = max_value)",
+              ")"
+            ],
+            "lineageTag": "2ebc31c4-7424-4e24-9fb7-3319896b8782"
+          },
+          {
+            "name": "Total Crime for Top Crime",
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[UCR Reporting],",
+              "    \"Total Crime Recorded\", DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              ")",
+              "",
+              "RETURN",
+              "MAXX(",
+              "    summary_table,",
+              "    [Total Crime Recorded]",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "c934ce88-9047-468b-8667-831bd4b39632"
+          },
+          {
+            "name": "% Crime for Top Crime",
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[UCR Reporting],",
+              "    \"Total Crime Recorded\", DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              ")",
+              "",
+              "VAR top_crime_total =",
+              "MAXX(",
+              "    summary_table,",
+              "    [Total Crime Recorded]",
+              ")",
+              "",
+              "RETURN",
+              "DIVIDE(",
+              "    top_crime_total,",
+              "    DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "1b7084ff-c11e-4434-a97a-2c61f6265372"
+          },
+          {
+            "name": "Location with The Most Crime Recorded",
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[Location Name],",
+              "    \"Total Crime Recorded\", DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              ")",
+              "",
+              "VAR max_value =",
+              "MAXX(",
+              "    summary_table,",
+              "    [Total Crime Recorded]",
+              ")",
+              "",
+              "RETURN",
+              "CALCULATE(",
+              "    SELECTEDVALUE('LA Crime Data'[Location Name]),",
+              "    FILTER(summary_table, [Total Crime Recorded] = max_value)",
+              ")"
+            ],
+            "lineageTag": "4af0751e-4353-4143-a5de-7cd9aba8d7e8"
+          },
+          {
+            "name": "Time with The Most Crime Recorded",
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[StandardTime],",
+              "    \"Total Crime Recorded\", DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              ")",
+              "",
+              "VAR max_value =",
+              "MAXX(",
+              "    summary_table,",
+              "    [Total Crime Recorded]",
+              ")",
+              "",
+              "RETURN",
+              "CALCULATE(",
+              "    SELECTEDVALUE('LA Crime Data'[StandardTime]),",
+              "    FILTER(summary_table, [Total Crime Recorded] = max_value)",
+              ")"
+            ],
+            "lineageTag": "80f94295-6d4f-4b40-ad1b-4874407265bb"
+          },
+          {
+            "name": "Average Crime Recorded per Day",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "",
+              "VAR crime_count = DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              "",
+              "RETURN",
+              "DIVIDE(",
+              "    crime_count,",
+              "    DATEDIFF(MIN('Calendar Table'[Date]), MAX('Calendar Table'[Date]), DAY)",
+              ")"
+            ],
+            "lineageTag": "4b050b15-203e-4160-8f88-619d9be81e94"
+          },
+          {
+            "name": "Premise with The Most Crime Recorded",
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[premis_desc],",
+              "    \"Total Crime Recorded\", DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              ")",
+              "",
+              "VAR max_value =",
+              "MAXX(",
+              "    summary_table,",
+              "    [Total Crime Recorded]",
+              ")",
+              "",
+              "RETURN",
+              "CALCULATE(",
+              "    SELECTEDVALUE('LA Crime Data'[premis_desc]),",
+              "    FILTER(summary_table, [Total Crime Recorded] = max_value)",
+              ")"
+            ],
+            "lineageTag": "593185b4-6087-4188-8873-56856904ccd4"
+          },
+          {
+            "name": "Weapon Type with The Most Crime Recorded",
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[Weapon Type],",
+              "    \"Total Crime Recorded\", DISTINCTCOUNT('LA Crime Data'[Record Number])",
+              ")",
+              "",
+              "VAR max_value =",
+              "MAXX(",
+              "    summary_table,",
+              "    [Total Crime Recorded]",
+              ")",
+              "",
+              "RETURN",
+              "CALCULATE(",
+              "    SELECTEDVALUE('LA Crime Data'[Weapon Type]),",
+              "    FILTER(summary_table, [Total Crime Recorded] = max_value)",
+              ")"
+            ],
+            "lineageTag": "68a3e22a-adcb-4de9-a23c-712784774ed9"
+          },
+          {
+            "name": "Crime Type with The Most Average Days Reported After Incident",
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[UCR Reporting],",
+              "    \"Average Days Reported\", AVERAGE('LA Crime Data'[Days to Report])",
+              ")",
+              "",
+              "VAR max_value =",
+              "MAXX(",
+              "    summary_table,",
+              "    [Average Days Reported]",
+              ")",
+              "",
+              "RETURN",
+              "CALCULATE(",
+              "    SELECTEDVALUE('LA Crime Data'[UCR Reporting]),",
+              "    FILTER(summary_table, [Average Days Reported] = max_value)",
+              ")"
+            ],
+            "lineageTag": "aa41596f-bfec-4584-b474-fa4706b4a0e6"
+          },
+          {
+            "name": "Average Days Reported After Incident for Top Crime",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    'LA Crime Data',",
+              "    'LA Crime Data'[UCR Reporting],",
+              "    \"Average Days Reported\", AVERAGE('LA Crime Data'[Days to Report])",
+              ")",
+              "",
+              "RETURN",
+              "MAXX(",
+              "    summary_table,",
+              "    [Average Days Reported]",
+              ")"
+            ],
+            "lineageTag": "e01a229f-117f-41ba-be3d-ab0317e9d176"
+          },
+          {
+            "name": "Ethnicity Victims with High Crime Count and High Average Days to Report for Top Crime",
+            "expression": [
+              "",
+              "",
+              "VAR crime_type = [Crime Type with The Most Average Days Reported After Incident]",
+              "",
+              "VAR summary_table =",
+              "SUMMARIZE(",
+              "    FILTER(",
+              "        'LA Crime Data',",
+              "        'LA Crime Data'[UCR Reporting] = crime_type",
+              "    ),",
+              "    'LA Crime Data'[UCR Reporting],",
+              "    'LA Crime Data'[Victim Descent],",
+              "    \"Total Crime Recorded\", DISTINCTCOUNT('LA Crime Data'[Record Number]),",
+              "    \"Average Days to Report\", AVERAGE('LA Crime Data'[Days to Report])",
+              ")",
+              "",
+              "VAR combined_score =",
+              "ADDCOLUMNS(",
+              "    summary_table,",
+              "    \"Combined Score\", [Total Crime Recorded] * [Average Days to Report]",
+              ")",
+              "",
+              "VAR max_combined_score =",
+              "MAXX(",
+              "    combined_score,",
+              "    [Combined Score]",
+              ")",
+              "",
+              "RETURN",
+              "CALCULATE(",
+              "    SELECTEDVALUE('LA Crime Data'[Victim Descent]),",
+              "    FILTER(",
+              "        combined_score,",
+              "        [Combined Score] = max_combined_score",
+              "    )",
+              ")",
+              "",
+              ""
+            ],
+            "lineageTag": "b0a6ae2a-24e5-4b3d-b9c0-f28ddd9df5ba"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measures Table",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

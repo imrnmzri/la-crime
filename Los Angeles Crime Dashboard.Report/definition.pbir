@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Los Angeles Crime Dashboard.SemanticModel"
+    },
+    "byConnection": null
+  }
+}
